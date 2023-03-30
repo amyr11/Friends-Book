@@ -1,4 +1,4 @@
-# game
+# Friends Book
 
 A new Flutter project.
 
