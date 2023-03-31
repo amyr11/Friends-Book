@@ -1,7 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/src/widgets/image.dart';
 
-class HaribotCard {
+class FriendsCard {
   final String name;
   final Image image;
   final int value;
@@ -9,5 +9,5 @@ class HaribotCard {
   late bool active;
   late bool done = false;
 
-  HaribotCard(this.name, this.image, this.value, this.active);
+  FriendsCard(this.name, this.image, this.value, this.active);
 }

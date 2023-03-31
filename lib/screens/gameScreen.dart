@@ -18,8 +18,8 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-  List<HaribotCard> allCards = [
-    HaribotCard(
+  List<FriendsCard> allCards = [
+    FriendsCard(
       'chandler',
       Image.asset(
         'assets/chandler1.png',
@@ -28,7 +28,7 @@ class _GameScreenState extends State<GameScreen> {
       1,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'chandler',
       Image.asset(
         'assets/chandler2.jpg',
@@ -37,7 +37,7 @@ class _GameScreenState extends State<GameScreen> {
       1,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'joey',
       Image.asset(
         'assets/joey1.jpg',
@@ -46,7 +46,7 @@ class _GameScreenState extends State<GameScreen> {
       2,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'joey',
       Image.asset(
         'assets/joey2.png',
@@ -55,7 +55,7 @@ class _GameScreenState extends State<GameScreen> {
       2,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'ross',
       Image.asset(
         'assets/ross1.jpg',
@@ -64,7 +64,7 @@ class _GameScreenState extends State<GameScreen> {
       3,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'ross',
       Image.asset(
         'assets/ross2.jpg',
@@ -73,7 +73,7 @@ class _GameScreenState extends State<GameScreen> {
       3,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'monica',
       Image.asset(
         'assets/monica1.png',
@@ -82,7 +82,7 @@ class _GameScreenState extends State<GameScreen> {
       4,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'monica',
       Image.asset(
         'assets/monica2.jpg',
@@ -91,7 +91,7 @@ class _GameScreenState extends State<GameScreen> {
       4,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'rachel',
       Image.asset(
         'assets/rachel1.jpg',
@@ -100,7 +100,7 @@ class _GameScreenState extends State<GameScreen> {
       5,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'rachel',
       Image.asset(
         'assets/rachel2.jpg',
@@ -109,7 +109,7 @@ class _GameScreenState extends State<GameScreen> {
       5,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'phoebe',
       Image.asset(
         'assets/phoebe1.png',
@@ -118,7 +118,7 @@ class _GameScreenState extends State<GameScreen> {
       6,
       false,
     ),
-    HaribotCard(
+    FriendsCard(
       'phoebe',
       Image.asset(
         'assets/phoebe2.jpg',
@@ -190,7 +190,7 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
-    List<HaribotCard> activeCards =
+    List<FriendsCard> activeCards =
         allCards.where((activity) => activity.active).toList();
 
     void clearArray() {
